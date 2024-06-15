@@ -1,6 +1,14 @@
 [workspace]
 resolver = "2"
 members = [
-  "_00-new-thread-with-spawn"
-, "_01-sum-array-in-parallel"]
+  "_00-new-thread-with-spawn", 
+  "_01-sum-array-in-parallel", 
+  "_02-thread-safety-arc-mut"
+]
+
+[profile.dev]
+opt-level = 1
+ 
+[profile.dev.package."*"]
+opt-level = 3
 
