@@ -1,0 +1,5 @@
+[package]
+name = "_02-thread-safety-arc-mut"
+version = "0.1.0"
+edition = "2021"
+
