@@ -22,7 +22,11 @@ cargo run --bin <project-name> # e.g., _00-new-thread-with-spawn
 
 or, inside the project directory `cargo run`
 
-### _00-new-thread-with-spawn
+### Projects overview
+
+Here you can find an overview about the current codes.  
+
+#### _00-new-thread-with-spawn
 
 In this project we create multiple threads using the **thread::spawn** function from the standard library. Each thread print "hey, {thread_identifier} either 
 from main or spawn thread". We also learn how to keep threads alive until all of they are all executed.
@@ -33,7 +37,7 @@ let handle = thread::spawn(move || {
 });
 ```
 
-### _01-sum-array-in-parallel
+#### _01-sum-array-in-parallel
 
 This project demonstrates how to sum all the elements of an array in parallel using multiple threads. It also use data decomposition by dividing the vector into 
 chunks.
@@ -47,7 +51,7 @@ for chunck in vector.chunks(chunk_vec_size) {
 }
 ```
 
-### _02-thread-safety-arc-mut
+#### _02-thread-safety-arc-mut
 
 This project implements a thread-safe counter using a `Mutex` to ensure safe increments among multiple threads and `Arc` used to share ownership of the 
 `Mutex`. Mutex ensures that multiple threads can safely increment the counter without causing race conditions.   
