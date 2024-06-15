@@ -8,7 +8,7 @@ package within a Cargo workspace.
 To get started with these projects, ensure you have [Rust](https://www.rust-lang.org/) installed on your machine. You can install Rust using `rustup` run the 
 following command in your terminal, then follow the onscreen instructions.
 
-````shell
+```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
@@ -27,7 +27,7 @@ or, inside the project directory `cargo run`
 In this project we create multiple threads using the **thread::spawn** function from the standard library. Each thread print "hey, {thread_identifier} either 
 from main or spawn thread". We also learn how to keep threads alive until all of they are all executed.
 
-````rust
+```rust
 let handle = thread::spawn(move || {
     println!("Hey, from thread {}", i);
 });
@@ -38,7 +38,7 @@ let handle = thread::spawn(move || {
 This project demonstrates how to sum all the elements of an array in parallel using multiple threads. It also use data decomposition by dividing the vector into 
 chunks.
 
-````rust
+```rust
 for chunck in vector.chunks(chunk_vec_size) {
     let chunk = chunck.to_owned();
     vec_threads.push(thread::spawn(move || -> i32 {
@@ -62,5 +62,3 @@ See [Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/rubnsbarbosa/sample-threads/tree/main?tab=MIT-1-ov-file) file for details.
-
-
