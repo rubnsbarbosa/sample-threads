@@ -63,6 +63,11 @@ See [Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html)
 * Before accessing the counter, each thread locks the Mutex using `lock()`. This ensures that only one thread can modify the counter at a time;  
 * After all threads have finished, the counter result is printed.   
 
+#### _03-producer-consumer-buffer
+
+The producer-consumer problem is a classic example of a multi-threading problem where a fixed-size buffer is shared between producer threads that generate data 
+and consumer threads that process data.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/rubnsbarbosa/sample-threads/tree/main?tab=MIT-1-ov-file) file for details.
