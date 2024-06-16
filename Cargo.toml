@@ -3,8 +3,8 @@ resolver = "2"
 members = [
   "_00-new-thread-with-spawn", 
   "_01-sum-array-in-parallel", 
-  "_02-thread-safety-arc-mut"
-]
+  "_02-thread-safety-arc-mut", 
+  "_03-producer-consumer-buffer"]
 
 [profile.dev]
 opt-level = 1
